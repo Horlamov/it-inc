@@ -16,4 +16,4 @@ function constructBuilding(name, cost) {
 
 }
 
-constructBuilding("house", 70);
+constructBuilding(buildingName, buildingCost);
