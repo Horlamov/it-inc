@@ -1,4 +1,4 @@
-let resource = 'lumber'
+let resource = 'lumber' // объявление глобальной переменной
 
 manageResources()
 
@@ -12,6 +12,7 @@ function manageResources() {
 }
 
 console.log(resource) // Вывод 3
+
 
 if (true) {
     resource = 'gold'
