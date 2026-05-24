@@ -3,8 +3,8 @@ let a;
 let b;
 let expected;
 
+
 function calculateAverage(a, b) {
-    expected = (a + b)/2;
-    console.log(expected)
+   return expected = (a + b)/2;
 }
-calculateAverage(2,4)
+calculateAverage(10,20)
