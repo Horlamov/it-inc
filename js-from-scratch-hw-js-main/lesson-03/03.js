@@ -2,12 +2,14 @@
 
 function findLargest(a, b, c) {
     if (a >= b && a >= c) {
-       return console.log(a)
-
+        console.log(a);
+        return a;
     } else if (b >= a && b >= c) {
-       return console.log(b)
+        console.log(b);
+        return b;
     } else if (c >= a && c >= b) {
-        return console.log(c)
+        console.log(c);
+        return c;
     }
     return findLargest;
 }
