@@ -1,9 +1,6 @@
 let budget = 100;
 
 
-
-console.log("budget: ", budget)
-
 function constructBuilding(name, cost) {
     if(budget >= cost) {
         budget -= cost;
@@ -17,3 +14,10 @@ constructBuilding("garage", 35);
 constructBuilding("house", 75);
 constructBuilding("sauna", 10);
 
+function increaseBudget(totalBudget, salary){
+    return totalBudget += salary;
+}
+
+budget = increaseBudget(budget, 1000)
+
+console.log("budget: ", budget);
