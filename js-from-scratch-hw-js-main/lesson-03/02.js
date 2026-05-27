@@ -13,8 +13,7 @@ function isEven(a) {
     }
 }
 
-b = isEven(43
-);
+b = isEven(43);
 
 
 
