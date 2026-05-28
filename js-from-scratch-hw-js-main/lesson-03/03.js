@@ -42,7 +42,3 @@
 //     console.log(output);
 // };
 
-const score = [60, 50, 60, 58, 54, 54, 58, 50, 52, 54, 48, 69]
-console.log("score", score[2]);
-
-const pets = []
