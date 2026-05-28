@@ -3,15 +3,17 @@ function getRandomElement(array) {
     return array[randomIndex];
 }
 
-function makePhrases() {
-    const words1 = ["Мой кот", "Моя собака", "Мой попугай"];
-    const words2 = ["любит есть", "хочет погрызть", "всегда ищет"];
-    const words3 = ["морковку", "макароны", "косточку"];
+const words1 = ["Мой кот", "Моя собака", "Мой попугай"];
+const words2 = ["любит есть", "хочет погрызть", "всегда ищет"];
+const words3 = ["морковку", "макароны", "косточку"];
 
-    const phrase = getRandomElement(words1) + " " + getRandomElement(words2) + " " + getRandomElement(words3);
-    return phrase
+function makePhrases(param1, param2, param3) {
+
+
+    const result = getRandomElement(param1) + " " + getRandomElement(param2) + " " + getRandomElement(param3);
+    return result;
 }
 
-const result = makePhrases();
+const result = makePhrases(words1, words2,words3);
 
 console.log(result);
