@@ -4,15 +4,18 @@ const scores2 = [45, 26, 89, 34, 87, 47, 30, 83];
 function convertGrade(someScores){
     let newScores = [];
     for (let i = 0; i < someScores.length; i++) {
-        if (someScores[i] >= 80){
-            newScores.push(5);
-        } else if (someScores[i] >= 50) {
-            newScores.push(4);
-        } else if (someScores[i] >= 30){
-            newScores.push(3);
+        let newGrade;
+        const item = someScores[i]
+        if (item >= 80){
+            newGrade = 5;
+        } else if (item >= 50) {
+            newGrade = 4;
+        } else if (item >= 30){
+            newGrade = 3;
         } else {
-            newScores.push(2);
+            newGrade = 2;
         }
+        newScores.push(newGrade);
     }
     return newScores;
 }
