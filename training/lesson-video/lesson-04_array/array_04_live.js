@@ -10,3 +10,20 @@ function reverseArray(someArr) {
 
 const reversedArray = reverseArray(superArray);
 console.log(reversedArray);
+
+function removeElement(someArr, element) {
+    const newArray = [];
+
+    for (let i = 0; i < someArr.length; i++) {
+        if (someArr[i] !== element) {
+            newArray.push(someArr[i])
+        }
+
+    }
+    return newArray
+}
+
+
+let filteredArray = removeElement(superArray,83)
+
+console.log(filteredArray)
