@@ -20,7 +20,7 @@ function includesElement(array, element) {
         if (array[i] === element) {
             isInclude = true
             break
-        } else {
+        } else if(element === false){
             isInclude = false}
     }
     return isInclude
