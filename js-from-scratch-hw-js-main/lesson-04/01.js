@@ -13,12 +13,16 @@
 Пример использования:
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
-
+ let isInclude = false;
 function includesElement(array, element) {
+
     for (let i = 0; i <array.length ; i++) {
         if (array[i] === element) {
-            console.log(true)
+            isInclude = true
         } else {
-            console.log(false)}
+            isInclude = false}
     }
+    return isInclude
 }
+
+ console.log(includesElement([1,2,3], 2));
