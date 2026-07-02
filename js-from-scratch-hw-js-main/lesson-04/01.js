@@ -24,4 +24,5 @@ includesElement([1, 2, 3], 2)  // должен вернуть `true`.
  }
 
  console.log(includesElement([1,2,3], 2));
+ console.log(includesElement([1,2,3], 4));
  console.log(includesElement([false,true], false));
