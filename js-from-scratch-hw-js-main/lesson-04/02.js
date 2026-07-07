@@ -12,7 +12,23 @@
 **Пример использования:**
 `findUniqueElements([1, 2, 3, 2, 1, 4])` вернёт `[1, 2, 3, 4]`.
 
-Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
+Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно,
+она доступна по всему проекту за счёт hoisting.
 */
+//
+import { includesElement } from './01.js'
 
-function findUniqueElements() {}
+function findUniqueElements(arr) {
+    const array = [];
+    for (let i = 0; i < arr.length; i++) {
+
+        if (includesElement(array, arr[i]) === false ) {
+
+            array.push(arr[i])
+        }
+    }
+    return array;
+}
+
+
+console.log(findUniqueElements([1,2,4,5,6,2,3,7,6,2,3,4,1,1]));
