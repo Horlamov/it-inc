@@ -19,16 +19,20 @@
 import { includesElement } from './01.js'
 
 function findUniqueElements(arr) {
-    const array = [];
+    const result = [];
     for (let i = 0; i < arr.length; i++) {
 
-        if (includesElement(array, arr[i]) === false ) {
+        if (includesElement(result, arr[i]) === false ) {
 
-            array.push(arr[i])
+            result.push(arr[i])
         }
     }
-    return array;
+    return result;
 }
 
 
-console.log(findUniqueElements([1,2,4,5,6,2,3,7,6,2,3,4,1]));
+console.log(findUniqueElements([1,2,2,3,4,4,5]));
+console.log(findUniqueElements(['apple', 'banana', 'apple', 'orange', 'banana']));
+console.log(findUniqueElements([true, false, true, false]));
+console.log(findUniqueElements([]));
+
