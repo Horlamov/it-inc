@@ -6,8 +6,8 @@
 - название произведения (ключ)
 - новое значение
 
-Если произведение с таким названием уже есть в галерее, его значение должно быть обновлено. Если произведения нет,
-оно должно быть добавлено в объект галерею.
+Если произведение с таким названием уже есть в галерее, его значение должно быть обновлено.
+Если произведения нет, оно должно быть добавлено в объект галерею.
 
 Пример использования функции:
 
@@ -31,22 +31,15 @@ console.log(gallery)
 }
 */
 
-const movies = [
-  { title: "Назад в будущее", rating: 8.5 },
-  { title: "Начало", rating: 8.8 },
-  { title: "Матрица", rating: 8.8 },
-  { title: "Паразиты", rating: 8.6 },
-  { title: "Тёмный рыцарь", rating: 9.0 }
-]
+const gallery = {
+  'Mona Lisa': 'Leonardo da Vinci',
+  'Starry Night': 'Vincent van Gogh',
+  'The Scream': 'Edvard Munch',
+}
 
-const sortedMovies = movies.sort((a, b) => {
-  if (a.rating < b.rating) {
-    return 1
-  } else if (a.rating === b.rating) {
-    return 0
-  } else {
-    return -1
-  }
-})
+function updateGallery(gallery, title, newValue) {
+  gallery[title] = newValue
+}
 
-console.log("Фильмы, отсортированные по рейтингу:", sortedMovies)
+updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
+updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali')
